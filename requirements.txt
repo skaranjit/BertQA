@@ -1,0 +1,8 @@
+newspaper3k
+transformers
+torch
+matplot
+pandas 
+nlp
+numpy
+seaborn

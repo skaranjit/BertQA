@@ -14,13 +14,14 @@ class Create_DS():
 
     def loadPdf(self,filename):
         print("I am working in progress")
-    def loadTxt(self,filename):
-        print("I working in progress")
+    def loadTxt(self,text):
+        self.ds = self.clean_text(text)
     def loadArticle(self,filename):
         article = Article(filename)
         article.download()
         article.parse()
         article.nlp()
+        print(article.text)
         self.ds = self.clean_text(article.text)
 
     def clean_text(self,text):
